@@ -465,7 +465,7 @@ F 3 "" H 1750 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2350 5300 2450 5300
-Text GLabel 2600 4700 1    50   Input ~ 0
+Text GLabel 2600 4700 2    50   Input ~ 0
 DOUT
 Text GLabel 3450 5150 2    50   Input ~ 0
 HH
@@ -504,26 +504,25 @@ $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 5E92CE86
-P 4300 3100
-F 0 "R4" H 4359 3146 50  0000 L CNN
-F 1 "10kR" H 4359 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4300 3100 50  0001 C CNN
-F 3 "~" H 4300 3100 50  0001 C CNN
-	1    4300 3100
+P 4300 3200
+F 0 "R4" H 4359 3246 50  0000 L CNN
+F 1 "10kR" H 4359 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4300 3200 50  0001 C CNN
+F 3 "~" H 4300 3200 50  0001 C CNN
+	1    4300 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5E92CE8C
-P 4600 3100
-F 0 "R5" H 4659 3146 50  0000 L CNN
-F 1 "10kR" H 4659 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4600 3100 50  0001 C CNN
-F 3 "~" H 4600 3100 50  0001 C CNN
-	1    4600 3100
+P 4600 3200
+F 0 "R5" H 4659 3246 50  0000 L CNN
+F 1 "10kR" H 4659 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4600 3200 50  0001 C CNN
+F 3 "~" H 4600 3200 50  0001 C CNN
+	1    4600 3200
 	1    0    0    -1  
 $EndComp
-Connection ~ 4300 3000
 $Comp
 L Device:R_Small R6
 U 1 1 5E926925
@@ -548,8 +547,6 @@ F 3 "~" H 3450 6200 50  0001 C CNN
 $EndComp
 Connection ~ 3900 6400
 Wire Wire Line
-	4300 3000 4600 3000
-Wire Wire Line
 	4300 6100 4600 6100
 Wire Wire Line
 	3450 4800 3450 5450
@@ -557,7 +554,6 @@ Wire Wire Line
 	3900 4900 3900 5400
 Wire Wire Line
 	4300 5450 3450 5450
-Connection ~ 4300 5450
 Wire Wire Line
 	4300 5450 4300 5800
 Connection ~ 3450 5450
@@ -565,7 +561,6 @@ Wire Wire Line
 	3450 5450 3450 5550
 Wire Wire Line
 	4600 5400 3900 5400
-Connection ~ 4600 5400
 Wire Wire Line
 	4600 5400 4600 5800
 Connection ~ 3900 5400
@@ -705,15 +700,9 @@ Wire Wire Line
 Wire Wire Line
 	3900 6600 2500 6600
 Wire Wire Line
-	4300 3200 4300 5450
-Wire Wire Line
-	4600 3200 4600 5400
-Wire Wire Line
 	2350 4800 3450 4800
 Wire Wire Line
 	2350 4900 3900 4900
-Text GLabel 2850 5800 2    50   Input ~ 0
-SINT
 Wire Wire Line
 	2350 4700 2600 4700
 Wire Wire Line
@@ -775,8 +764,6 @@ Wire Wire Line
 	2350 5700 2500 5700
 Connection ~ 2500 5700
 Wire Wire Line
-	2500 5700 2500 5900
-Wire Wire Line
 	2350 5900 2500 5900
 Connection ~ 2500 5900
 Wire Wire Line
@@ -804,183 +791,23 @@ Wire Wire Line
 $Comp
 L Device:R_Small R1
 U 1 1 5E8C3020
-P 2450 3100
-F 0 "R1" H 2509 3146 50  0000 L CNN
-F 1 "20kR" H 2509 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2450 3100 50  0001 C CNN
-F 3 "~" H 2450 3100 50  0001 C CNN
-	1    2450 3100
+P 2450 3150
+F 0 "R1" H 2509 3196 50  0000 L CNN
+F 1 "20kR" H 2509 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2450 3150 50  0001 C CNN
+F 3 "~" H 2450 3150 50  0001 C CNN
+	1    2450 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 3000 2450 3000
-Connection ~ 2450 3000
 Wire Wire Line
 	2350 3300 2500 3300
 Wire Wire Line
-	2450 3200 2450 5300
-Wire Wire Line
 	2350 5000 2500 5000
 Connection ~ 2500 5000
-Wire Wire Line
-	2500 5000 2500 5100
-$Comp
-L dk_PMIC-Voltage-Regulators-Linear:MCP1700T-3302E_TT U1
-U 1 1 5E8FE5C8
-P 4400 2100
-F 0 "U1" H 4400 2281 60  0000 C CNN
-F 1 "MCP1700T-3302E_TT" H 4400 2387 60  0000 C CNN
-F 2 "digikey-footprints:SOT-23-3" H 4600 2300 60  0001 L CNN
-F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" H 4600 2400 60  0001 L CNN
-F 4 "MCP1700T3302ETTCT-ND" H 4600 2500 60  0001 L CNN "Digi-Key_PN"
-F 5 "MCP1700T-3302E/TT" H 4600 2600 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 4600 2700 60  0001 L CNN "Category"
-F 7 "PMIC - Voltage Regulators - Linear" H 4600 2800 60  0001 L CNN "Family"
-F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011779" H 4600 2900 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/microchip-technology/MCP1700T-3302E-TT/MCP1700T3302ETTCT-ND/652677" H 4600 3000 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC REG LINEAR 3.3V 250MA SOT23-3" H 4600 3100 60  0001 L CNN "Description"
-F 11 "Microchip Technology" H 4600 3200 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4600 3300 60  0001 L CNN "Status"
-	1    4400 2100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5E903EBA
-P 4000 1250
-F 0 "R2" V 3804 1250 50  0000 C CNN
-F 1 "10kR" V 3895 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4000 1250 50  0001 C CNN
-F 3 "~" H 4000 1250 50  0001 C CNN
-	1    4000 1250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3900 1250 3650 1250
-Wire Wire Line
-	3650 2100 3650 1950
-Wire Wire Line
-	4400 1800 4400 1600
-Wire Wire Line
-	4400 1600 4000 1600
-Text GLabel 4950 2100 2    50   Input ~ 0
+Text GLabel 4000 1000 1    50   Input ~ 0
 +5V
-Wire Wire Line
-	4950 2100 4900 2100
-Text GLabel 4950 1600 2    50   Input ~ 0
+Text GLabel 4000 2200 3    50   Input ~ 0
 GND
-Wire Wire Line
-	4950 1600 4400 1600
-Connection ~ 4400 1600
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:BSS138-7-F Q1
-U 1 1 5E951CC9
-P 2850 1600
-F 0 "Q1" V 3011 1600 60  0000 C CNN
-F 1 "BSS138-7-F" V 3117 1600 60  0000 C CNN
-F 2 "digikey-footprints:SOT-23-3" H 3050 1800 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30144.pdf" H 3050 1900 60  0001 L CNN
-F 4 "BSS138-FDICT-ND" H 3050 2000 60  0001 L CNN "Digi-Key_PN"
-F 5 "BSS138-7-F" H 3050 2100 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 3050 2200 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 3050 2300 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/ds30144.pdf" H 3050 2400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/BSS138-7-F/BSS138-FDICT-ND/717843" H 3050 2500 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 50V 200MA SOT23-3" H 3050 2600 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 3050 2700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3050 2800 60  0001 L CNN "Status"
-	1    2850 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R8
-U 1 1 5E954FD5
-P 3150 1800
-F 0 "R8" V 2954 1800 50  0000 C CNN
-F 1 "10kR" V 3045 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3150 1800 50  0001 C CNN
-F 3 "~" H 3150 1800 50  0001 C CNN
-	1    3150 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5E95EA28
-P 2550 1800
-F 0 "R3" V 2354 1800 50  0000 C CNN
-F 1 "10kR" V 2445 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2550 1800 50  0001 C CNN
-F 3 "~" H 2550 1800 50  0001 C CNN
-	1    2550 1800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3150 1600 3150 1700
-Connection ~ 3150 1600
-Wire Wire Line
-	3150 1600 3050 1600
-Wire Wire Line
-	2650 1600 2550 1600
-Wire Wire Line
-	2550 1600 2550 1700
-Wire Wire Line
-	3150 1900 2950 1900
-Wire Wire Line
-	3150 1900 3150 2100
-Wire Wire Line
-	3150 2100 3650 2100
-Connection ~ 3150 1900
-Connection ~ 3650 2100
-Text GLabel 4100 2100 3    50   Input ~ 0
-+3.3V
-Text GLabel 3150 1600 1    50   Input ~ 0
-USIT
-Text GLabel 2450 1600 0    50   Input ~ 0
-SINT
-Wire Wire Line
-	2550 1600 2450 1600
-Connection ~ 2550 1600
-Wire Wire Line
-	4900 2100 4900 2550
-Wire Wire Line
-	4900 2550 2550 2550
-Wire Wire Line
-	2550 2550 2550 1900
-Connection ~ 4900 2100
-Wire Wire Line
-	4900 2100 4700 2100
-Connection ~ 4100 2100
-Wire Wire Line
-	4100 2100 3650 2100
-Wire Wire Line
-	3250 1600 3150 1600
-Wire Wire Line
-	4100 1250 4100 2100
-$Comp
-L Oscillator:ECS-327TXO X1
-U 1 1 5E8FBC0A
-P 3650 1950
-F 0 "X1" H 4044 2346 50  0000 L CNN
-F 1 "ECS-327TXO" H 4044 2255 50  0000 L CNN
-F 2 "Oscillator:ECS-327MVATX-3" H 3850 1400 50  0001 C CNN
-F 3 "" H 3850 1400 50  0001 C CNN
-	1    3650 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 3000 4300 3000
-Wire Wire Line
-	2350 5800 2850 5800
-Wire Wire Line
-	2350 5100 2500 5100
-Connection ~ 2500 5100
-Wire Wire Line
-	2500 5100 2500 5200
-Wire Wire Line
-	2350 5200 2500 5200
-Connection ~ 2500 5200
-Wire Wire Line
-	2500 5200 2500 5400
 $Comp
 L Connector:AVR-ISP-6 J2
 U 1 1 5E98C3D7
@@ -1035,4 +862,204 @@ Wire Wire Line
 	7050 1550 7050 1750
 Wire Wire Line
 	7150 1750 7150 1550
+Text GLabel 2650 5200 2    50   Input ~ 0
+SCL
+Text GLabel 2650 5100 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	2500 5000 2500 5400
+Wire Wire Line
+	2650 5100 2350 5100
+Wire Wire Line
+	2350 5200 2650 5200
+$Comp
+L Device:R_Small R2
+U 1 1 5EA8EEFC
+P 2850 3200
+F 0 "R2" H 2909 3246 50  0000 L CNN
+F 1 "1kR" H 2909 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2850 3200 50  0001 C CNN
+F 3 "~" H 2850 3200 50  0001 C CNN
+	1    2850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5EA8EF02
+P 3150 3200
+F 0 "R3" H 3209 3246 50  0000 L CNN
+F 1 "1kR" H 3209 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3150 3200 50  0001 C CNN
+F 3 "~" H 3150 3200 50  0001 C CNN
+	1    3150 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 3400 3    50   Input ~ 0
+SCL
+Text GLabel 3150 3400 3    50   Input ~ 0
+SDA
+Wire Wire Line
+	3150 3400 3150 3300
+Wire Wire Line
+	2850 3400 2850 3300
+Text GLabel 2650 5800 2    50   Input ~ 0
+MFP
+Wire Wire Line
+	2500 5700 2500 5900
+Wire Wire Line
+	2350 5800 2650 5800
+$Comp
+L Timer:MCP7940N-xSN U1
+U 1 1 5EABF3B4
+P 4000 1650
+F 0 "U1" V 3954 1206 50  0000 R CNN
+F 1 "MCP7940N-xSN" V 4045 1206 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4000 1650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005010F.pdf" H 4000 1650 50  0001 C CNN
+	1    4000 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2200 4000 2100
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5EAE6B3C
+P 5250 1350
+F 0 "BT1" H 5368 1446 50  0000 L CNN
+F 1 "Battery_Cell" H 5368 1355 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3034_1x20mm" V 5250 1410 50  0001 C CNN
+F 3 "~" V 5250 1410 50  0001 C CNN
+	1    5250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1150 4100 1150
+Wire Wire Line
+	4100 1150 4100 1250
+Text GLabel 3200 1750 0    50   Input ~ 0
+MFP
+Text GLabel 3200 1550 0    50   Input ~ 0
+SDA
+Text GLabel 3200 1450 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	3200 1450 3600 1450
+Wire Wire Line
+	3600 1550 3200 1550
+Wire Wire Line
+	3200 1750 3600 1750
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 5EB11680
+P 4550 1650
+F 0 "Y1" V 4504 1738 50  0000 L CNN
+F 1 "7pF CL" V 4595 1738 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 4550 1650 50  0001 C CNN
+F 3 "~" H 4550 1650 50  0001 C CNN
+	1    4550 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5EB1C4E1
+P 4850 1550
+F 0 "C1" V 4621 1550 50  0000 C CNN
+F 1 "8pF" V 4712 1550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4850 1550 50  0001 C CNN
+F 3 "~" H 4850 1550 50  0001 C CNN
+	1    4850 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5EB1CFE1
+P 4850 1750
+F 0 "C2" V 4621 1750 50  0000 C CNN
+F 1 "8pF" V 4712 1750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4850 1750 50  0001 C CNN
+F 3 "~" H 4850 1750 50  0001 C CNN
+	1    4850 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 1550 4550 1550
+Connection ~ 4550 1550
+Wire Wire Line
+	4550 1550 4750 1550
+Wire Wire Line
+	4750 1750 4550 1750
+Connection ~ 4550 1750
+Wire Wire Line
+	4550 1750 4400 1750
+Wire Wire Line
+	5250 1450 5250 1550
+Wire Wire Line
+	5250 2100 4000 2100
+Connection ~ 4000 2100
+Wire Wire Line
+	4000 2100 4000 2050
+Wire Wire Line
+	4950 1750 5250 1750
+Connection ~ 5250 1750
+Wire Wire Line
+	5250 1750 5250 2100
+Wire Wire Line
+	4950 1550 5250 1550
+Connection ~ 5250 1550
+Wire Wire Line
+	5250 1550 5250 1750
+Wire Wire Line
+	4000 1000 4000 1250
+Text GLabel 3450 3400 3    50   Input ~ 0
+MFP
+$Comp
+L Device:R_Small R8
+U 1 1 5EB88C1D
+P 3450 3200
+F 0 "R8" H 3509 3246 50  0000 L CNN
+F 1 "1kR" H 3509 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3450 3200 50  0001 C CNN
+F 3 "~" H 3450 3200 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3300 3450 3400
+Wire Wire Line
+	2850 3100 2850 3000
+Connection ~ 2850 3000
+Wire Wire Line
+	2850 3000 3150 3000
+Wire Wire Line
+	3150 3100 3150 3000
+Connection ~ 3150 3000
+Wire Wire Line
+	3150 3000 3450 3000
+Wire Wire Line
+	3450 3100 3450 3000
+Connection ~ 3450 3000
+Wire Wire Line
+	3450 3000 4300 3000
+Wire Wire Line
+	2450 3250 2450 5300
+Wire Wire Line
+	1850 3000 2450 3000
+Wire Wire Line
+	2450 3050 2450 3000
+Connection ~ 2450 3000
+Wire Wire Line
+	2450 3000 2850 3000
+Wire Wire Line
+	4300 3100 4300 3000
+Connection ~ 4300 3000
+Wire Wire Line
+	4300 3000 4600 3000
+Wire Wire Line
+	4600 3100 4600 3000
+Wire Wire Line
+	4300 3300 4300 5450
+Connection ~ 4300 5450
+Wire Wire Line
+	4600 3300 4600 5400
+Connection ~ 4600 5400
 $EndSCHEMATC
